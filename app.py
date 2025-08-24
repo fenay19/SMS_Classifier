@@ -4,9 +4,7 @@ import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+
 ps=PorterStemmer()
 def transform_test(text):
   text=text.lower()
@@ -46,3 +44,4 @@ if st.button("Predict"):
 # here we hv to preprocces then vectorize,predict,display
 # se we took pickle files from our ipynb notebook and added here
 # to perform all these
+
